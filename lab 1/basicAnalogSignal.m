@@ -1,4 +1,4 @@
-clc; clear all;
+clc; clear all; close all;
 
 %x=Asin(2pift)%
 
@@ -8,8 +8,13 @@ Fs=500;
 t=0:1/Fs:1;
 
 x=A*sin(2*pi*f*t);
-%x=A*cos(2*pi*f*t);%
-%x=A*sin(2*pi*f*t + 180);%
+%x=A*cos(2*pi*f*t);
+%x=A*sin(2*pi*f*t + 180);
 
 plot(t,x);
+
+xlabel('Time');
+ylabel('Amplitude');
+title('Sine Wave');
+
 grid on;
