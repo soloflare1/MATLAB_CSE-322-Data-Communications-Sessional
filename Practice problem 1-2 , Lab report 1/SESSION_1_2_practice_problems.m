@@ -35,7 +35,7 @@ plot(t, x6, 'y');
 title('Cosine Signal (1 Hz)');
 
 (* 2.	Plot Signals in Different Figure *)
-clc; clear all; close all;
+(* clc; clear all; close all;
 
 t = 0:0.01:6;
 x1 = sin(2*pi*5*t);
@@ -152,4 +152,4 @@ title('Multiplication of Signal (x1 .* x2)');
 xlabel('Time (s)');
 ylabel('Amplitude');
 grid on;
-
+ *)
