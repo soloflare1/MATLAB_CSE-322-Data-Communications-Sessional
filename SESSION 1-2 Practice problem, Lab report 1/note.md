@@ -1,8 +1,8 @@
 ## 🔹 **1. Setup Commands**
 
-• `clc` → Clears the command window
-• `clear all` → Removes all variables from workspace
-• `close all` → Closes all figure windows
+*  `clc` → Clears the command window
+*  `clear all` → Removes all variables from workspace
+*  `close all` → Closes all figure windows
 
 👉 These commands are used to start with a clean environment.
 
@@ -12,7 +12,7 @@
 
 Analog signal equation:
 [
-y(t) = A \sin(2\pi f t + \theta)
+`y(t) = A \sin(2\pi f t + \theta)`
 ]
 
 ### Steps:
@@ -28,9 +28,9 @@ y(t) = A \sin(2\pi f t + \theta)
 
 ## 🔹 **3. Digital Signal (Discrete Signal)**
 
-• Digital signals are defined only at specific sample points
-• Represented using a sequence like: `[1 0 1 1 0]`
-• Plotted using `stem()` function
+* Digital signals are defined only at specific sample points
+* Represented using a sequence like: `[1 0 1 1 0]`
+* Plotted using `stem()` function
 
 👉 Each value is shown as a separate point.
 
@@ -47,8 +47,8 @@ y(t) = A \sin(2\pi f t + \theta)
 
 ## 🔹 **5. hold on Command**
 
-• Used to plot multiple signals in the same figure
-• Keeps previous graph and adds new one
+* Used to plot multiple signals in the same figure
+* Keeps previous graph and adds new one
 
 👉 Useful for signal comparison.
 
@@ -56,15 +56,15 @@ y(t) = A \sin(2\pi f t + \theta)
 
 ## 🔹 **6. subplot Command**
 
-• Divides one figure into multiple sections
+* Divides one figure into multiple sections
 
 ### Format:
 
 `subplot(m, n, p)`
 
-• m = number of rows
-• n = number of columns
-• p = position of plot
+* m = number of rows
+* n = number of columns
+* p = position of plot
 
 👉 Example: `subplot(2,2,1)` means first section of a 2×2 grid.
 
@@ -72,8 +72,8 @@ y(t) = A \sin(2\pi f t + \theta)
 
 ## 🔹 **7. figure Command**
 
-• Opens a new figure window
-• Used when separate plots are needed
+* Opens a new figure window
+* Used when separate plots are needed
 
 ---
 
@@ -92,7 +92,7 @@ x_3 = x_1 + x_2
 ### ➤ Subtraction:
 
 [
-x_4 = x_1 - x_2
+`x_4 = x_1 - x_2`
 ]
 
 👉 Shows difference between two signals.
@@ -102,7 +102,7 @@ x_4 = x_1 - x_2
 ### ➤ Multiplication:
 
 [
-x_5 = x_1 .* x_2
+`x_5 = x_1 .* x_2`
 ]
 
 👉 Element-wise multiplication
@@ -113,7 +113,7 @@ x_5 = x_1 .* x_2
 ### ➤ Division:
 
 [
-x_6 = x_1 ./ x_2
+`x_6 = x_1 ./ x_2`
 ]
 
 👉 Element-wise division (may cause divide-by-zero issues)
