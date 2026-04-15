@@ -152,5 +152,3 @@ x_3 = x_1 + x_2
 | figure         | Separate window               |
 | hold on        | Overlay multiple plots        |
 | .*             | Element-wise multiplication   |
-
---
