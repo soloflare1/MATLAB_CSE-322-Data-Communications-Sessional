@@ -1,4 +1,4 @@
-(*1.	Draw 6 analog signal using subplot  *)
+% 1.Draw 6 analog signal using subplot %
 clc; clear all; close all;
 
 t = 0:0.01:6;
@@ -34,8 +34,8 @@ subplot(3,2,6);
 plot(t, x6, 'y');
 title('Cosine Signal (1 Hz)');
 
-(* 2.	Plot Signals in Different Figure *)
-(* clc; clear all; close all;
+%  2.	Plot Signals in Different Figure 
+ clc; clear all; close all;
 
 t = 0:0.01:6;
 x1 = sin(2*pi*5*t);
@@ -64,7 +64,7 @@ ylabel('Amplitude');
 grid on;
 
 
-(* 3.	Addition: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their sum (x1+x2). *)
+%  3.	Addition: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their sum (x1+x2). 
 clc; clear all; close all;
 
 t = 0:0.01:10;
@@ -94,7 +94,7 @@ ylabel('Amplitude');
 grid on;
 
 
-(* 4.	Subtraction: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their difference (x1-x2). *)
+%  4.	Subtraction: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their difference (x1-x2). 
 clc; clear all; close all;
 
 t = 0:0.01:10;
@@ -124,7 +124,7 @@ ylabel('Amplitude');
 grid on;
 
 
-(* 5.	Multiplication: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their product (x1.*x2). *)
+%  5.	Multiplication: Create a 3x1 subplot containing the sine wave (x1), cosine wave (x2), and their product (x1.*x2). 
 clc; clear all; close all;
 
 t = 0:0.01:10;
@@ -152,4 +152,4 @@ title('Multiplication of Signal (x1 .* x2)');
 xlabel('Time (s)');
 ylabel('Amplitude');
 grid on;
- *)
+ 
