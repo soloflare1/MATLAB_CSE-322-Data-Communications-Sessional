@@ -216,15 +216,16 @@ PSK keeps the same frequency and changes only the phase, so it uses less frequen
 
 #### ASK
 
+```
 s(t)=A\sin(2\pi ft)\ \text{for bit 1, and}\ 0\ \text{for bit 0}
-
+```
 #### FSK
-
+```
 s(t)=A\sin(2\pi f_1 t)\ \text{for bit 1, and}\ A\sin(2\pi f_0 t)\ \text{for bit 0}
-
+```
 #### PSK
-
+```
 s(t)=A\sin(2\pi ft)\ \text{for bit 1, and}\ -A\sin(2\pi ft)\ \text{for bit 0}
-
+```
 ---
 
