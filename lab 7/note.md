@@ -191,3 +191,40 @@ PSK keeps the same frequency and changes only the phase, so it uses less frequen
 * Simplest → ASK
 * Better noise resistance → FSK
 * Most efficient and reliable → PSK
+---
+
+
+
+#### 1. ASK
+
+* Bit `1` → sine wave
+* Bit `0` → no signal (zero amplitude)
+
+#### 2. FSK
+
+* Bit `1` → higher frequency (`10 Hz`)
+* Bit `0` → lower frequency (`5 Hz`)
+
+#### 3. PSK
+
+* Bit `1` → normal sine wave
+* Bit `0` → phase inverted sine wave (`180^\circ` shift)
+
+---
+
+### Signal Representation
+
+#### ASK
+
+s(t)=A\sin(2\pi ft)\ \text{for bit 1, and}\ 0\ \text{for bit 0}
+
+#### FSK
+
+s(t)=A\sin(2\pi f_1 t)\ \text{for bit 1, and}\ A\sin(2\pi f_0 t)\ \text{for bit 0}
+
+#### PSK
+
+s(t)=A\sin(2\pi ft)\ \text{for bit 1, and}\ -A\sin(2\pi ft)\ \text{for bit 0}
+
+---
+
