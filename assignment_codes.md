@@ -396,3 +396,68 @@ grid on;
 title('Bipolar AMI (0001111001101010)');
 xlabel('Time');
 ylabel('Amplitude');
+```
+### 5. Program Enhancement : Polar NRZ-L Encoding 
+```matlab
+clc; clear; close all;
+
+choice = input('Enter 1 for manual input or 2 for random sequence: ');
+
+if choice == 1
+    m = input('Enter binary sequence (e.g., [1 0 1 1 0]): ');
+else
+    n = input('Enter number of bits: ');
+    m = randi([0 1],1,n);
+    disp('Random Binary Sequence:');
+    disp(m);
+end
+
+n = length(m);
+
+x = [];
+y = [];
+
+for i = 1:n
+    x = [x i-1 i];
+
+    if m(i) == 0
+        y = [y 1 1];
+    else
+        y = [y -1 -1];
+    end
+end
+
+plot(x,y,'r','LineWidth',3);
+axis([0 n -1.5 1.5]);
+grid on;
+hold on;
+
+% Bit boundaries
+for i = 0:n
+    xline(i,'--b');
+end
+
+title('Polar NRZ-L Encoding');
+xlabel('Time');
+ylabel('Amplitude');
+
+% Encoded voltage levels
+disp('Encoded Voltage Levels:');
+disp(y);
+
+% Signal transitions
+transitions = sum(diff(y) ~= 0);
+fprintf('Total Signal Transitions: %d\n', transitions);
+
+% DC bias
+avg = mean(y);
+fprintf('Average Signal Level (DC Bias): %.2f\n', avg);
+
+% Count 0s and 1s
+num0 = sum(m == 0);
+num1 = sum(m == 1);
+
+fprintf('Number of 0s: %d\n', num0);
+fprintf('Number of 1s: %d\n', num1);
+
+```
