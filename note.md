@@ -1,6 +1,31 @@
 ### 1. PCM is done to transform an analog signal into a digital bit stream.
 * To convert an analog signal into digital data so that it can be processed, stored, and transmitted using digital systems.
-  
+```
+  A = 2
+     ↓
+Analog sine wave amplitude
+
+f = 2 Hz
+     ↓
+Signal frequency
+
+fs = 40 Hz
+     ↓
+Sampling rate
+
+t = 0 to 1 sec
+     ↓
+Time samples
+
+n = 3 bits
+     ↓
+Binary resolution
+
+L = 8 levels
+     ↓
+Quantization levels
+```
+
 | Step | MATLAB Variable                                     | Output                                    |
 | ---- | --------------------------------------------------- | ----------------------------------------- |
 | 1    | `sig`                                               | `[-2 -1 0 1 2]`                           |
