@@ -1,3 +1,19 @@
+```
+PCM  (Analog → Digital bits)
+↓
+Line Coding  (Digital bits → Digital waveform)
+↓
+ASK/FSK/PSK  (Digital waveform → Modulated carrier)
+↓
+Transmission
+```
+```
+PCM = Make Bits
+Line Coding = Make Digital Pulses
+ASK/FSK/PSK = Put Bits on Carrier
+Transmission = Send Signal
+```
+
 ### 1. PCM is done to transform an analog signal into a digital bit stream.
 * To convert an analog signal into digital data so that it can be processed, stored, and transmitted using digital systems.
 ```
